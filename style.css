@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.content{
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1100px;
+    max-height: 470px;
+    margin:14% auto;
+    margin-bottom: 10%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+}
+.content .box-2 .txt{
+    padding: 15%;
+    padding-bottom: 10%;
+}
+.box-1,.box-2{
+    
+    width: 50%;
+}
+.image{
+    background: url(images/image-header-desktop.jpg);
+    width: 100%;
+    height: 470px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px ;
+    background-repeat:round;
+    
+}
+.s-image{
+    background: hsl(277, 64%, 61%);
+    mix-blend-mode:overlay;
+    height: 100%;
+    
+}
+.box .txt p,h1{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 7%;
+    font-size: 35px;
+}
+.box-2 .txt p{
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5em;
+}
+footer{
+    padding-bottom: 0%;
+}
+.v{
+    color:  hsl(277, 64%, 61%);
+}
+.bel{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 14%;
+    padding-bottom: 0%;
+}
+.sub{
+    flex-direction: row;
+    flex-basis: 33.33%;
+}
+.sub h1{
+    font-size: 23px;
+    line-height: 1em;
+    font-weight:bold;
+    
+}
+.bel .sub p{
+    font-size: 12px;
+}
+.attribution{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+@media(max-width: 720px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .content{
+        display: inline;
+        margin: auto;
+    }      
+    .box-1, .box-2{
+        width: 90%;
+        margin: auto;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .bel{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-top: 14%;
+    }
+    .sub{
+        flex-basis: 33.33%;
+        margin-top: 10%;
+    }
+    .sub h1{
+        font-size: 23px;
+        line-height: 1em;
+        font-weight:bold;
+        
+    }
+    .bel .sub p{
+        font-size: 12px;
+        margin-top: 0%;
+    }
+    .image{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius:0px ;
+    }
+
+}
+
